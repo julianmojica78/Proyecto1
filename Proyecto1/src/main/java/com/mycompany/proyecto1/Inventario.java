@@ -2,22 +2,34 @@ package com.mycompany.proyecto1;
 
 /**
  *en esta clase se declaran los atributos y los metodos que necesitaran la clase Inventario
- * @author Julia David Bustos Mojica
+ * @author Julian David Bustos Mojica
  * @version 1.0
  */
 public class Inventario {
     //declaracion de atributos
-    //atributo que captura el id_inventario
+    /*
+    atributo que captura el id_inventario
+    */
     private int id_inventario;
-    //atributo que captura el id_libros
+    /*
+    atributo que captura el id_libros
+    */
     private int id_libros;
-    //atributo que captura la descripcion
+    /*
+    atributo que captura la descripcion
+    */
     private String descripcion;
-    //atributo que captura el stock del inventario
+    /*
+    atributo que captura el stock del inventario
+    */
     private int stock;
-    //atributo que captura las entradas del inventario
+    /*
+    atributo que captura las entradas del inventario
+    */
     private int entrada;
-    //atributo que captura las salidas del inventario
+    /*
+    atributo que captura las salidas del inventario
+    */
     private int salida;
     /*Creacion del constructor
         metodo constructor de la clase inventario
@@ -35,22 +47,24 @@ public class Inventario {
        este metodo contara la cantidad de libros que hay en el stock
        */
        public void librosInventario (int stock){
-         this.stock = stock;
        }
        /*
        este metodo contara el libro mas vendido que tenemos
        */
        public void librosSalida (int salida){
-         this.salida = salida;
        }
    /*
    creacion de metodo para la impresion la informacion del inventario
    */
       public void mostrarInvntario(){
           
-          System.out.println("La cantidad total  de libros es "+stock);
-          System.out.println("el libro mas vendido es"+salida);
       }
+    /*
+    Metodo get para mostrar el  atributo id_inventario
+    */
+    public int getId_inventario() {
+        return id_inventario;
+    }
     /*
     Metodo get para mostrar el  atributo id_libros  
     */
@@ -80,6 +94,12 @@ public class Inventario {
     */
     public int getSalida() {
         return salida;
+    }
+    /*
+    Metodo set para modificar el atributo id_inventario  
+    */
+    public void setId_inventario(int id_inventario) {
+        this.id_inventario = id_inventario;
     }
     /*
     Metodo set para modificar el atributo id_libros  

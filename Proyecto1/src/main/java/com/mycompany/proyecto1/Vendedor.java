@@ -1,17 +1,16 @@
 package com.mycompany.proyecto1;
-
 /**
- *en esta clase se declaran los atributos y los metodos que necesitaran la clase Usuario
+ *en esta clase se declaran los atributos y los metodos que necesitaran la clase Vendedor
  * @author Julian David Bustos Mojica
  * @version 1.0
  */
-public class Usuario {
+public class Vendedor {
     
     //declaracion de atributos
     /*
-    atributo que captura el id_usuario
+    atributo que captura el idvendedor
     */
-    private int id_usuario;
+    private int idvendedor;
     /*
     atributo que captura el nombre del usuario
     */
@@ -24,27 +23,29 @@ public class Usuario {
     atributo que captura la cedula del usuario
     */
     private String cedula;
-    /*
-    atributo que captura la direccion del usuario
-    */
-    private String direccion;   
     
     /*Creacion del constructor
         metodo constructor de la clase usuario
     */
-    public Usuario(int id_usuario, String nombre, String apellido, String cedula, String direccion) {
-        
-        this.id_usuario = id_usuario;
+    public Vendedor(int idvendedor, String nombre, String apellido, String cedula) {
+        this.idvendedor = idvendedor;
         this.nombre = nombre;
         this.apellido = apellido;
         this.cedula = cedula;
-        this.direccion = direccion;
-    }  
+    }
+    
+    /*
+    metodo para agregar libros 
+    */
+    public void agregarLibro(){
+        
+    }
+    
     /*
     Metodo get para mostrar el  atributo id_usuario  
     */
-    public int getId_usuario() {
-        return id_usuario;
+    public int getIdvendedor() {
+        return idvendedor;
     }
     /*
     Metodo get para mostrar el  atributo nombre 
@@ -65,18 +66,12 @@ public class Usuario {
         return cedula;
     }
     /*
-    Metodo get para mostrar el  atributo direccion 
-    */
-    public String getDireccion() {
-        return direccion;
-    }
-    /*
     Metodo set para modificar el atributo id_usuario
     */
-    public void setId_usuario(int id_usuario) {
-        this.id_usuario = id_usuario;
+    public void setIdvendedor(int idvendedor) {
+        this.idvendedor= idvendedor;
     }
-    /*
+     /*
     Metodo set para modificar el atributo nombre
     */
     public void setNombre(String nombre) {
@@ -94,13 +89,4 @@ public class Usuario {
     public void setCedula(String cedula) {
         this.cedula = cedula;
     }
-    /*
-    Metodo set para modificar el atributo direccion  
-    */
-    public void setDireccion(String direccion) {
-        this.direccion = direccion;
-    }
-    
 }
-
-

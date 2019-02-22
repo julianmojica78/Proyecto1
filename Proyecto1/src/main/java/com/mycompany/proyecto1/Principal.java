@@ -1,7 +1,7 @@
 package com.mycompany.proyecto1;
 /**
- *en esta clase se declaran los atributos y los metodos que necesitaran la clase Usuario
- * @author Julia David Bustos Mojica
+ *
+ * @author Julian David Bustos Mojica
  * @version 1.0
  */
 public class Principal {
@@ -16,8 +16,8 @@ public class Principal {
        libros1.preciosLibros("1000");
        libros1.mostrarDatos();
        
-       Usuario usuario1 = new Usuario(1,"","","","",1,1);
-       usuario1.venta();
+       Usuario usuario1 = new Usuario(1,"","","","");
+
        
       
    }

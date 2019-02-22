@@ -2,22 +2,32 @@ package com.mycompany.proyecto1;
 
 /**
  *en esta clase se declaran los atributos y los metodos que necesitaran la clase Libros
- * @author Julia David Bustos Mojica
+ * @author Julian David Bustos Mojica
  * @version 1.0
  */
 public class Libros {
     
     //declaracion de atributos
     
-    //atributo que captura el id_libros
+    /*
+    atributo que captura el id_libros
+    */
     private int id_libros;
-    //atributo que captura el autor del libro
+    /*
+    atributo que captura el autor del libro
+    */
     private String autor;
-    //atributo que captura la version del libro
+    /*
+    atributo que captura la version del libro
+    */
     private String version;
-    //atributo que captura la editorial del libro
+    /*
+    atributo que captura la editorial del libro
+    */
     private String editorial;
-    //atributo que captura el precio del libro
+    /*
+    atributo que captura el precio del libro
+    */
     private String precio;
       
     /*Creacion del constructor
@@ -36,16 +46,12 @@ public class Libros {
    creacion de metodo para verificar los precios de los libros
    */
    public void preciosLibros(String precio){
-       this.precio = precio;
    
    }
    /*
    creacion de metodo para la impresion la informacion de precios de los libros
    */
       public void mostrarDatos(){
-      
-          System.out.println("El libro mas caro"+precio);
-          System.out.println("El libro mas barato"+precio);
       
       }
     /*
